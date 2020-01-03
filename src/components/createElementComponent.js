@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable react/forbid-prop-types */
 import React, {useRef, useEffect, useLayoutEffect} from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import {useElementsContextWithUseCase} from './Elements';
 import isEqual from '../utils/isEqual';
 
@@ -122,16 +122,16 @@ const createElementComponent = (type: string) => {
     return <div id={id} className={className} ref={domNode} />;
   };
 
-  Element.propTypes = {
-    id: PropTypes.string,
-    className: PropTypes.string,
-    onChange: PropTypes.func,
-    onBlur: PropTypes.func,
-    onFocus: PropTypes.func,
-    onReady: PropTypes.func,
-    onClick: PropTypes.func,
-    options: PropTypes.object,
-  };
+  // Element.propTypes = {
+  //   id: PropTypes.string,
+  //   className: PropTypes.string,
+  //   onChange: PropTypes.func,
+  //   onBlur: PropTypes.func,
+  //   onFocus: PropTypes.func,
+  //   onReady: PropTypes.func,
+  //   onClick: PropTypes.func,
+  //   options: PropTypes.object,
+  // };
 
   Element.defaultProps = {
     onChange: noop,
