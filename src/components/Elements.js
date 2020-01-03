@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable react/forbid-prop-types */
 import React, {useContext, useMemo, useState} from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import isEqual from '../utils/isEqual';
 import usePrevious from '../utils/usePrevious';
@@ -117,11 +117,11 @@ export const Elements = ({stripe: rawStripe, options, children}: Props) => {
   );
 };
 
-Elements.propTypes = {
-  stripe: PropTypes.any,
-  children: PropTypes.node,
-  options: PropTypes.object,
-};
+// Elements.propTypes = {
+//   stripe: PropTypes.any,
+//   children: PropTypes.node,
+//   options: PropTypes.object,
+// };
 
 export const useElementsContextWithUseCase = (useCaseMessage: string) => {
   const ctx = useContext(ElementsContext);
@@ -152,6 +152,6 @@ export const ElementsConsumer = ({
   return children(ctx);
 };
 
-ElementsConsumer.propTypes = {
-  children: PropTypes.func.isRequired,
-};
+// ElementsConsumer.propTypes = {
+//   children: PropTypes.func.isRequired,
+// };
